@@ -111,7 +111,7 @@ export function SearchComponent({ className }: SearchComponentProps) {
       {isOpen && query.trim() && results.length === 0 && (
         <Card className="absolute top-full left-0 right-0 mt-2 z-50 animate-fade-in">
           <CardContent className="p-4 text-center text-muted-foreground">
-            Ничего не найдено по запросу "{query}"
+            Ничего не найдено по запросу &quot;{query}&quot;
           </CardContent>
         </Card>
       )}

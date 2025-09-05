@@ -17,6 +17,10 @@ const lectureImports = {
     import("./lectures/introduction-to-info-security").then(
       (m) => m.introductionToInfoSecurity
     ),
+  "html5-semantic-lecture": () =>
+    import("./lectures/html5-semantic-lecture").then(
+      (m) => m.html5SemanticLecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

@@ -23,6 +23,8 @@ const lectureImports = {
     ),
   "java-fundamentals-lecture": () =>
     import("./lectures/java-fundamentals-lecture").then((m) => m.javaLecture),
+  "java-basics-lecture": () =>
+    import("./lectures/java-basics-lecture").then((m) => m.javaBasicsLecture),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

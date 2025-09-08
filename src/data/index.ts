@@ -21,6 +21,8 @@ const lectureImports = {
     import("./lectures/html5-semantic-lecture").then(
       (m) => m.html5SemanticLecture
     ),
+  "java-fundamentals-lecture": () =>
+    import("./lectures/java-fundamentals-lecture").then((m) => m.javaLecture),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

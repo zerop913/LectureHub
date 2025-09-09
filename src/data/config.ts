@@ -6,5 +6,6 @@ export const dataConfig = {
     "html5-semantic-lecture",
     "java-fundamentals-lecture",
     "java-basics-lecture",
+    "java-syntax-advanced-lecture",
   ],
 };

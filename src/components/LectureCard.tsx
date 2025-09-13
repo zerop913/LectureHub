@@ -26,18 +26,18 @@ export function LectureCard({ lecture }: LectureCardProps) {
     <Link href={`/lectures/${lecture.id}`}>
       <Card hover className="h-full animate-fade-in group">
         <CardHeader>
-          <div className="flex items-start justify-between">
-            <div className="flex-1">
-              <CardTitle className="text-lg mb-2 group-hover:text-primary transition-colors">
+          <div className="flex items-start justify-between gap-3">
+            <div className="flex-1 min-w-0">
+              <CardTitle className="text-base sm:text-lg mb-2 group-hover:text-primary transition-colors">
                 {lecture.title}
               </CardTitle>
               <CardDescription className="text-sm leading-relaxed line-clamp-2">
                 {lecture.description}
               </CardDescription>
             </div>
-            <div className="ml-3 mt-1 flex-shrink-0">
-              <div className="w-8 h-8 bg-primary/10 rounded-sm flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <Play className="w-4 h-4 text-primary" />
+            <div className="flex-shrink-0">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary/10 rounded-sm flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <Play className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
               </div>
             </div>
           </div>
@@ -60,17 +60,21 @@ export function LectureCard({ lecture }: LectureCardProps) {
               </div>
             )}
 
-            <div className="flex items-center justify-between text-sm text-muted-foreground">
-              <div className="flex items-center space-x-3">
+            <div className="flex items-center justify-between text-xs sm:text-sm text-muted-foreground">
+              <div className="flex items-center space-x-2 sm:space-x-3 min-w-0">
                 <div className="flex items-center space-x-1">
-                  <Layers className="w-4 h-4" />
-                  <span>{lecture.slides.length} слайдов</span>
+                  <Layers className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                  <span className="truncate">
+                    {lecture.slides.length} слайдов
+                  </span>
                 </div>
 
                 {lecture.duration && (
                   <div className="flex items-center space-x-1">
-                    <Clock className="w-4 h-4" />
-                    <span>{formatDuration(lecture.duration)}</span>
+                    <Clock className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                    <span className="truncate">
+                      {formatDuration(lecture.duration)}
+                    </span>
                   </div>
                 )}
               </div>
@@ -84,7 +88,7 @@ export function LectureCard({ lecture }: LectureCardProps) {
                       ? "primary"
                       : "secondary"
                   }
-                  className="text-xs"
+                  className="text-xs flex-shrink-0"
                 >
                   {getDifficultyLabel(lecture.difficulty)}
                 </Badge>
@@ -109,9 +113,9 @@ interface LectureGridProps {
 export function LectureGrid({ lectures }: LectureGridProps) {
   if (lectures.length === 0) {
     return (
-      <div className="text-center py-12">
-        <div className="text-4xl mb-4">📚</div>
-        <h3 className="text-lg font-medium text-muted-foreground mb-2">
+      <div className="text-center py-8 sm:py-12">
+        <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">📚</div>
+        <h3 className="text-base sm:text-lg font-medium text-muted-foreground mb-2">
           Лекции не найдены
         </h3>
         <p className="text-sm text-muted-foreground">
@@ -122,7 +126,7 @@ export function LectureGrid({ lectures }: LectureGridProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
       {lectures.map((lecture, index) => (
         <div
           key={lecture.id}

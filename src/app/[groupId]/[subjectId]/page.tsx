@@ -69,8 +69,8 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="mb-6 sm:mb-8">
           <Breadcrumbs
             items={[
               { label: "Главная", href: "/" },
@@ -80,19 +80,19 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
           />
         </div>
 
-        <div className="mb-20">
-          <h1 className="text-6xl font-bold text-foreground mb-6 tracking-tight leading-none">
+        <div className="mb-12 sm:mb-16 lg:mb-20">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 tracking-tight leading-none">
             {subject.title}
           </h1>
         </div>
 
         <section>
-          <h2 className="text-4xl font-bold text-foreground mb-16 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-8 sm:mb-12 lg:mb-16 tracking-tight">
             Лекции
           </h2>
 
           {subjectLectures.length > 0 ? (
-            <div className="grid grid-cols-1 gap-6">
+            <div className="grid grid-cols-1 gap-4 sm:gap-6">
               {subjectLectures.map((lecture) => (
                 <Link key={lecture.id} href={`/lectures/${lecture.id}`}>
                   <Card

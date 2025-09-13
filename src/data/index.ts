@@ -21,6 +21,10 @@ const lectureImports = {
     import("./lectures/html5-semantic-lecture").then(
       (m) => m.html5SemanticLecture
     ),
+  "html-tags-deep-dive": () =>
+    import("./lectures/html-tags-deep-dive").then(
+      (m) => m.htmlTagsDeepDiveLecture
+    ),
   "java-fundamentals-lecture": () =>
     import("./lectures/java-fundamentals-lecture").then((m) => m.javaLecture),
   "java-basics-lecture": () =>
@@ -28,6 +32,10 @@ const lectureImports = {
   "java-syntax-advanced-lecture": () =>
     import("./lectures/java-syntax-advanced-lecture").then(
       (m) => m.javaSyntaxAdvancedLecture
+    ),
+  "security-architecture-lecture": () =>
+    import("./lectures/security-architecture-lecture").then(
+      (m) => m.securityArchitectureLecture
     ),
 };
 

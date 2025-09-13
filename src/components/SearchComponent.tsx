@@ -50,30 +50,30 @@ export function SearchComponent({ className }: SearchComponentProps) {
           placeholder="Поиск лекций..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="pl-10"
+          className="pl-10 text-sm"
           onBlur={() => setTimeout(handleClose, 200)}
         />
       </div>
 
       {isOpen && results.length > 0 && (
-        <Card className="absolute top-full left-0 right-0 mt-2 z-50 max-h-96 overflow-y-auto animate-fade-in">
-          <CardContent className="p-2">
+        <Card className="absolute top-full left-0 right-0 mt-2 z-50 max-h-80 sm:max-h-96 overflow-y-auto animate-fade-in shadow-lg">
+          <CardContent className="p-1 sm:p-2">
             {results.map((result) => (
               <Link
                 key={result.lecture.id}
                 href={`/lectures/${result.lecture.id}`}
-                className="block p-3 hover:bg-muted transition-colors border-b border-border last:border-b-0"
+                className="block p-2 sm:p-3 hover:bg-muted transition-colors border-b border-border last:border-b-0"
                 onClick={handleClose}
               >
-                <div className="flex items-start justify-between">
+                <div className="flex items-start justify-between gap-2">
                   <div className="flex-1 min-w-0">
-                    <h4 className="font-medium text-sm truncate">
+                    <h4 className="font-medium text-xs sm:text-sm truncate">
                       {result.lecture.title}
                     </h4>
-                    <p className="text-xs text-muted-foreground truncate mt-1">
+                    <p className="text-xs text-muted-foreground truncate mt-1 hidden sm:block">
                       {result.lecture.description}
                     </p>
-                    <div className="flex items-center gap-2 mt-2">
+                    <div className="flex items-center gap-1 sm:gap-2 mt-1 sm:mt-2 flex-wrap">
                       <Badge variant="secondary" className="text-xs">
                         {result.lecture.slides.length} слайдов
                       </Badge>
@@ -82,17 +82,17 @@ export function SearchComponent({ className }: SearchComponentProps) {
                           {getDifficultyLabel(result.lecture.difficulty)}
                         </Badge>
                       )}
-                      <span className="text-xs text-muted-foreground">
+                      <span className="text-xs text-muted-foreground hidden sm:inline">
                         {formatDate(result.lecture.createdAt)}
                       </span>
                     </div>
                   </div>
-                  <div className="flex items-center ml-2">
+                  <div className="flex items-center ml-2 flex-shrink-0">
                     <Badge
                       variant={
                         result.matchType === "title" ? "primary" : "default"
                       }
-                      className="text-xs"
+                      className="text-xs hidden sm:inline-flex"
                     >
                       {result.matchType === "title"
                         ? "Заголовок"

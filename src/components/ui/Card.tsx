@@ -16,7 +16,7 @@ export function Card({
 }: CardProps) {
   const baseProps = {
     className: cn(
-      "bg-card border border-border p-8 card-glow transition-all duration-300",
+      "bg-card border border-border p-4 sm:p-6 lg:p-8 card-glow transition-all duration-300",
       hover && "hover:border-foreground/20 cursor-pointer group",
       className
     ),
@@ -40,7 +40,7 @@ export function CardHeader({
   children: ReactNode;
   className?: string;
 }) {
-  return <div className={cn("mb-4", className)}>{children}</div>;
+  return <div className={cn("mb-3 sm:mb-4", className)}>{children}</div>;
 }
 
 export function CardTitle({

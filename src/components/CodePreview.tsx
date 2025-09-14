@@ -206,7 +206,6 @@ export function CodePreview({
           isFullscreen ? "w-full h-full" : "w-[90vw] h-[80vh] max-w-6xl"
         )}
       >
-        {/* Header */}
         <div className="flex items-center justify-between p-6 bg-gray-50 border-b border-gray-200">
           <div className="flex items-center gap-4">
             <div className="flex gap-2">
@@ -244,7 +243,6 @@ export function CodePreview({
           </div>
         </div>
 
-        {/* Content */}
         <div className="flex-1 p-6 bg-white">
           <div className="w-full h-full bg-white border border-gray-200 rounded-lg overflow-hidden shadow-inner">
             <iframe
@@ -256,7 +254,6 @@ export function CodePreview({
           </div>
         </div>
 
-        {/* Footer */}
         <div className="p-4 bg-gray-50 border-t border-gray-200 flex justify-between items-center">
           <div className="text-sm text-gray-500">
             Предпросмотр {language.toUpperCase()} кода

@@ -9,5 +9,7 @@ export const dataConfig = {
     "java-basics-lecture",
     "java-syntax-advanced-lecture",
     "security-architecture-lecture",
+    "java-oop-lecture",
+    "java-oop-basic-lecture",
   ],
 };

@@ -126,14 +126,12 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
       case "title":
         return (
           <div className="min-h-[80vh] flex flex-col justify-center items-center text-center space-y-16 relative overflow-hidden">
-            {/* Decorative background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-gray-200 to-gray-100 opacity-30 blur-3xl"></div>
               <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-tl from-gray-300 to-gray-200 opacity-20 blur-3xl"></div>
             </div>
 
             <div className="space-y-12 relative z-10">
-              {/* Main title with decorative elements */}
               <div className="relative">
                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-gray-900 to-transparent"></div>
                 <h1 className="text-5xl md:text-7xl font-black text-gray-900 leading-[0.9] max-w-5xl tracking-tight relative">
@@ -178,7 +176,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                     key={index}
                     className="group relative p-8 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl hover:border-gray-400 hover:shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden"
                   >
-                    {/* Decorative corner element */}
                     <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-gray-100 to-transparent opacity-50"></div>
 
                     <div className="flex items-center justify-between mb-6">
@@ -210,7 +207,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
       case "list":
         return (
           <div className="max-w-5xl mx-auto space-y-16 relative">
-            {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <div className="absolute bottom-20 left-10 w-24 h-24 bg-gradient-to-tr from-gray-200 to-gray-100 opacity-30 rotate-12"></div>
             </div>
@@ -222,7 +218,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                     {slide.title}
                   </span>
                 </h2>
-                {/* Decorative underline */}
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-transparent via-gray-900 to-transparent"></div>
               </div>
 
@@ -243,14 +238,12 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                     key={index}
                     className="group relative p-8 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl hover:border-gray-400 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 overflow-hidden"
                   >
-                    {/* Background pattern */}
                     <div className="absolute inset-0 opacity-5">
                       <div className="absolute top-4 right-4 w-16 h-16 border border-gray-300 rounded-full"></div>
                       <div className="absolute bottom-4 right-8 w-8 h-8 bg-gray-200 rounded-md rotate-45"></div>
                     </div>
 
                     <div className="relative flex items-start gap-6">
-                      {/* Enhanced number badge */}
                       <div className="flex-shrink-0 relative">
                         <div className="w-14 h-14 bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
                           {index + 1}
@@ -259,7 +252,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                         <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-gray-400 rounded-full opacity-50"></div>
                       </div>
 
-                      {/* Content with decorative elements */}
                       <div className="flex-1 relative">
                         <div className="absolute -left-4 top-0 w-0.5 h-full bg-gradient-to-b from-gray-300 to-transparent"></div>
                         <p className="text-gray-800 leading-relaxed text-lg font-medium tracking-tight pl-6">
@@ -268,7 +260,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                       </div>
                     </div>
 
-                    {/* Hover effect overlay */}
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-50/0 via-gray-50/20 to-gray-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                   </div>
                 ))}
@@ -280,7 +271,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
       case "two-column":
         return (
           <div className="max-w-7xl mx-auto space-y-16 relative">
-            {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <div className="absolute top-10 left-1/2 transform -translate-x-1/2 w-1 h-32 bg-gradient-to-b from-gray-200 to-transparent"></div>
               <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-gradient-to-br from-gray-100 to-gray-200 opacity-40 rotate-12"></div>
@@ -307,7 +297,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
 
             {slide.leftContent && slide.rightContent && (
               <div className="relative">
-                {/* Central divider with decorative elements */}
                 <div className="absolute left-1/2 top-8 bottom-8 transform -translate-x-1/2 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent hidden lg:block"></div>
                 <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white border-2 border-gray-300 hidden lg:block"></div>
                 <div className="absolute left-1/2 top-1/4 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-gray-400 opacity-60 hidden lg:block"></div>
@@ -315,7 +304,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
                   <div className="space-y-8 relative">
-                    {/* Left column header */}
                     <div className="flex items-center gap-4 mb-8">
                       <div className="w-2 h-12 bg-gradient-to-b from-gray-900 to-gray-600 rounded-full"></div>
                       <h3 className="text-3xl font-bold text-gray-900 tracking-tight">
@@ -329,7 +317,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                           key={index}
                           className="group relative p-6 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:border-gray-400 hover:shadow-lg hover:scale-[1.02] transition-all duration-300 overflow-hidden"
                         >
-                          {/* Background decoration */}
                           <div className="absolute top-2 right-2 w-8 h-8 bg-gradient-to-br from-gray-100 to-transparent rounded-full opacity-50"></div>
 
                           <div className="flex items-start gap-4 relative">
@@ -355,7 +342,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                   </div>
 
                   <div className="space-y-8 relative">
-                    {/* Right column header */}
                     <div className="flex items-center gap-4 mb-8">
                       <div className="w-2 h-12 bg-gradient-to-b from-gray-900 to-gray-600 rounded-full"></div>
                       <h3 className="text-3xl font-bold text-gray-900 tracking-tight">
@@ -369,7 +355,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                           key={index}
                           className="group relative p-6 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:border-gray-400 hover:shadow-lg hover:scale-[1.02] transition-all duration-300 overflow-hidden"
                         >
-                          {/* Background decoration */}
                           <div className="absolute top-2 right-2 w-8 h-8 bg-gradient-to-br from-gray-100 to-transparent rounded-full opacity-50"></div>
 
                           <div className="flex items-start gap-4 relative">
@@ -402,7 +387,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
       case "code":
         return (
           <div className="max-w-6xl mx-auto space-y-16 relative">
-            {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <div className="absolute top-20 left-20 w-16 h-16 border border-gray-200 opacity-30 rotate-12"></div>
               <div className="absolute bottom-20 right-16 w-12 h-12 bg-gray-100 opacity-40"></div>
@@ -430,7 +414,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
             {slide.codeExample && (
               <div className="relative z-10">
                 <div className="relative bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-2xl hover:shadow-3xl transition-shadow duration-500">
-                  {/* Enhanced header */}
                   {slide.codeExample.title && (
                     <div className="relative bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50 px-8 py-6 border-b border-gray-200">
                       <div className="flex items-center justify-between">
@@ -446,7 +429,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                           </span>
                         </div>
 
-                        {/* Preview button and decorative elements */}
                         <div className="flex items-center gap-4">
                           {slide.codeExample &&
                             ["html", "css", "javascript", "js"].includes(
@@ -477,14 +459,11 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                         </div>
                       </div>
 
-                      {/* Header decoration */}
                       <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
                     </div>
                   )}
 
-                  {/* Enhanced code block */}
                   <div className="relative">
-                    {/* Custom Line numbers background */}
                     <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-gray-50 to-gray-100 border-r border-gray-200 flex flex-col py-8">
                       {slide.codeExample.code.split("\n").map((_, index) => (
                         <div
@@ -496,7 +475,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                       ))}
                     </div>
 
-                    {/* Code content with syntax highlighting */}
                     <div className="pl-20 pr-8 py-8 bg-gradient-to-br from-gray-50 to-white overflow-x-auto">
                       <SyntaxHighlighter
                         language={slide.codeExample.language.toLowerCase()}
@@ -527,18 +505,15 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                       </SyntaxHighlighter>
                     </div>
 
-                    {/* Decorative code elements */}
                     <div className="absolute top-4 right-4 flex items-center gap-2 opacity-30">
                       <div className="w-6 h-6 border border-gray-300 rounded opacity-50"></div>
                       <div className="w-4 h-4 bg-gray-200 rounded-sm opacity-60"></div>
                     </div>
                   </div>
 
-                  {/* Bottom decoration */}
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200"></div>
                 </div>
 
-                {/* Floating decorative elements */}
                 <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg opacity-40 rotate-12"></div>
                 <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-gradient-to-tl from-gray-300 to-gray-200 rounded-full opacity-50"></div>
               </div>
@@ -549,7 +524,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
       case "conclusion":
         return (
           <div className="min-h-[80vh] flex flex-col justify-center max-w-6xl mx-auto space-y-20 relative overflow-hidden">
-            {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <div className="absolute top-16 left-16 w-72 h-72 bg-gradient-to-br from-gray-200 to-gray-100 opacity-20 blur-3xl"></div>
               <div className="absolute bottom-16 right-16 w-96 h-96 bg-gradient-to-tl from-gray-300 to-gray-200 opacity-15 blur-3xl"></div>
@@ -557,7 +531,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
 
             <div className="text-center space-y-12 relative z-10">
               <div className="relative">
-                {/* Decorative top line */}
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-gray-900 to-transparent"></div>
 
                 <h2 className="text-5xl md:text-7xl font-black text-gray-900 leading-[0.9] tracking-tight relative">
@@ -566,7 +539,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                   </span>
                 </h2>
 
-                {/* Decorative bottom line */}
                 <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-gray-900 to-transparent"></div>
               </div>
 
@@ -608,12 +580,10 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                       key={index}
                       className="group relative p-8 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-3xl hover:border-gray-400 hover:shadow-2xl hover:scale-105 transition-all duration-400 overflow-hidden"
                     >
-                      {/* Background decorations */}
                       <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-gray-100 to-transparent opacity-50 rounded-bl-3xl"></div>
                       <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-gray-50 to-transparent opacity-60 rounded-tr-3xl"></div>
 
                       <div className="relative flex items-start gap-6">
-                        {/* Enhanced number badge */}
                         <div className="flex-shrink-0 relative">
                           <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-3xl flex items-center justify-center text-2xl font-black shadow-xl">
                             {index + 1}
@@ -622,7 +592,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                           <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-gray-400 rounded-full opacity-50"></div>
                         </div>
 
-                        {/* Content with enhanced styling */}
                         <div className="flex-1 relative">
                           <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-gray-300 via-gray-200 to-transparent"></div>
                           <p className="text-gray-800 leading-relaxed text-lg font-medium tracking-tight pl-6">
@@ -631,7 +600,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                         </div>
                       </div>
 
-                      {/* Hover effect overlay */}
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-50/0 via-gray-50/30 to-gray-50/0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none rounded-3xl"></div>
                     </div>
                   ))}
@@ -639,7 +607,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
               </div>
             )}
 
-            {/* Final decorative element */}
             <div className="flex justify-center relative z-10">
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-gray-900 to-transparent"></div>
             </div>
@@ -649,14 +616,12 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
       default:
         return (
           <div className="min-h-[70vh] flex flex-col justify-center max-w-6xl mx-auto relative overflow-hidden">
-            {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <div className="absolute top-20 left-20 w-48 h-48 bg-gradient-to-br from-gray-200 to-gray-100 opacity-25 blur-2xl"></div>
               <div className="absolute bottom-20 right-20 w-64 h-64 bg-gradient-to-tl from-gray-300 to-gray-200 opacity-20 blur-2xl"></div>
             </div>
 
             <div className="space-y-16 relative z-10">
-              {/* Title Section */}
               <div className="text-center">
                 <div className="relative">
                   <h2 className="text-4xl md:text-6xl font-black text-gray-900 leading-tight tracking-tight relative">
@@ -668,20 +633,16 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
                 </div>
               </div>
 
-              {/* Content Section - Minimalist Approach */}
               <div className="max-w-4xl mx-auto">
                 <div className="relative group">
-                  {/* Subtle side accent */}
                   <div className="absolute -left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-gray-400 via-gray-300 to-gray-200 rounded-full"></div>
 
-                  {/* Clean content container */}
                   <div className="pl-12 pr-8 py-8">
                     <div className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light whitespace-pre-wrap tracking-wide">
                       <MarkdownText>{slide.content || ""}</MarkdownText>
                     </div>
                   </div>
 
-                  {/* Subtle bottom accent line */}
                   <div className="ml-12 mt-6 w-16 h-0.5 bg-gradient-to-r from-gray-400 to-transparent"></div>
                 </div>
               </div>
@@ -693,7 +654,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 flex flex-col font-['Geist',system-ui,sans-serif] antialiased relative overflow-hidden">
-      {/* Background decorative pattern */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full opacity-30">
           <div className="absolute top-20 left-20 w-2 h-2 bg-gray-300 rounded-full animate-pulse"></div>
@@ -758,7 +718,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
       </header>
 
       <main className="flex-1 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 sm:py-8 lg:py-12 pb-20 sm:pb-24 lg:pb-28 relative">
-        {/* Subtle background pattern for main content */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
           <div className="absolute top-6 sm:top-10 left-6 sm:left-10 w-16 sm:w-24 lg:w-32 h-16 sm:h-24 lg:h-32 border border-gray-200 rounded-full opacity-20"></div>
           <div className="absolute bottom-6 sm:bottom-10 right-6 sm:right-10 w-12 sm:w-16 lg:w-24 h-12 sm:h-16 lg:h-24 bg-gradient-to-br from-gray-100 to-transparent rounded-lg opacity-30 rotate-12"></div>
@@ -812,7 +771,6 @@ export function PresentationViewer({ lecture }: PresentationViewerProps) {
         </div>
       </footer>
 
-      {/* Code Preview Modal */}
       <CodePreview
         isOpen={codePreview.isOpen}
         onClose={closeCodePreview}

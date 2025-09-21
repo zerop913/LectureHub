@@ -11,5 +11,6 @@ export const dataConfig = {
     "security-architecture-lecture",
     "java-oop-lecture",
     "java-oop-basic-lecture",
+    "security-assessment-methodology",
   ],
 };

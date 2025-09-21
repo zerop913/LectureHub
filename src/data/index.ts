@@ -43,6 +43,10 @@ const lectureImports = {
     import("./lectures/java-oop-basic-lecture").then(
       (m) => m.javaOOPBasicLecture
     ),
+  "security-assessment-methodology": () =>
+    import("./lectures/security-assessment-methodology").then(
+      (m) => m.securityAssessmentMethodologyLecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

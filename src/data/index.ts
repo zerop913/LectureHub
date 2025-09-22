@@ -47,6 +47,10 @@ const lectureImports = {
     import("./lectures/security-assessment-methodology").then(
       (m) => m.securityAssessmentMethodologyLecture
     ),
+  "java-oop-part2-lecture": () =>
+    import("./lectures/java-oop-part2-lecture").then(
+      (m) => m.javaOOPPart2Lecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

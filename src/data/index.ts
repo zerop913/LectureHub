@@ -51,6 +51,10 @@ const lectureImports = {
     import("./lectures/java-oop-part2-lecture").then(
       (m) => m.javaOOPPart2Lecture
     ),
+  "xss-vulnerabilities-lecture": () =>
+    import("./lectures/xss-vulnerabilities-lecture").then(
+      (m) => m.xssVulnerabilitiesLecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

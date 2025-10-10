@@ -55,6 +55,12 @@ const lectureImports = {
     import("./lectures/xss-vulnerabilities-lecture").then(
       (m) => m.xssVulnerabilitiesLecture
     ),
+  "css-basics-lecture": () =>
+    import("./lectures/css-basics-lecture").then((m) => m.cssBasicsLecture),
+  "java-design-patterns-lecture": () =>
+    import("./lectures/java-design-patterns-lecture").then(
+      (m) => m.javaDesignPatternsLecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

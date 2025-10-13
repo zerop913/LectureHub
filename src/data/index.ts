@@ -61,6 +61,10 @@ const lectureImports = {
     import("./lectures/java-design-patterns-lecture").then(
       (m) => m.javaDesignPatternsLecture
     ),
+  "sql-injection-lecture": () =>
+    import("./lectures/sql-injection-lecture").then(
+      (m) => m.sqlInjectionLecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

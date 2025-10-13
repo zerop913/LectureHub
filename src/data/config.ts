@@ -16,5 +16,6 @@ export const dataConfig = {
     "xss-vulnerabilities-lecture",
     "css-basics-lecture",
     "java-design-patterns-lecture",
+    "sql-injection-lecture",
   ],
 };

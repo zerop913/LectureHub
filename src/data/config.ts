@@ -17,5 +17,6 @@ export const dataConfig = {
     "css-basics-lecture",
     "java-design-patterns-lecture",
     "sql-injection-lecture",
+    "java-arrays-strings-lecture",
   ],
 };

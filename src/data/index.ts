@@ -65,6 +65,10 @@ const lectureImports = {
     import("./lectures/sql-injection-lecture").then(
       (m) => m.sqlInjectionLecture
     ),
+  "java-arrays-strings-lecture": () =>
+    import("./lectures/java-arrays-strings-lecture").then(
+      (m) => m.javaArraysStringsLecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

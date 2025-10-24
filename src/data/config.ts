@@ -18,5 +18,7 @@ export const dataConfig = {
     "java-design-patterns-lecture",
     "sql-injection-lecture",
     "java-arrays-strings-lecture",
+    "event-driven-programming-lecture",
+    "tailwind-css-lecture",
   ],
 };

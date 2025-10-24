@@ -69,6 +69,12 @@ const lectureImports = {
     import("./lectures/java-arrays-strings-lecture").then(
       (m) => m.javaArraysStringsLecture
     ),
+  "event-driven-programming-lecture": () =>
+    import("./lectures/event-driven-programming-lecture").then(
+      (m) => m.eventDrivenProgrammingLecture
+    ),
+  "tailwind-css-lecture": () =>
+    import("./lectures/tailwind-css-lecture").then((m) => m.tailwindCSSLecture),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

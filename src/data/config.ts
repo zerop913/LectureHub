@@ -20,5 +20,7 @@ export const dataConfig = {
     "java-arrays-strings-lecture",
     "event-driven-programming-lecture",
     "tailwind-css-lecture",
+    "broken-authentication-lecture",
+    "oauth-jwt-lecture",
   ],
 };

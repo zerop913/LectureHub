@@ -75,6 +75,12 @@ const lectureImports = {
     ),
   "tailwind-css-lecture": () =>
     import("./lectures/tailwind-css-lecture").then((m) => m.tailwindCSSLecture),
+  "broken-authentication-lecture": () =>
+    import("./lectures/broken-authentication-lecture").then(
+      (m) => m.brokenAuthenticationLecture
+    ),
+  "oauth-jwt-lecture": () =>
+    import("./lectures/oauth-jwt-lecture").then((m) => m.oauthJwtLecture),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

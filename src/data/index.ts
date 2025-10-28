@@ -81,6 +81,10 @@ const lectureImports = {
     ),
   "oauth-jwt-lecture": () =>
     import("./lectures/oauth-jwt-lecture").then((m) => m.oauthJwtLecture),
+  "java-oop-principles-lecture": () =>
+    import("./lectures/java-oop-principles-lecture").then(
+      (m) => m.javaOOPPrinciplesLecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

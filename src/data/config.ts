@@ -22,5 +22,6 @@ export const dataConfig = {
     "tailwind-css-lecture",
     "broken-authentication-lecture",
     "oauth-jwt-lecture",
+    "java-oop-principles-lecture",
   ],
 };

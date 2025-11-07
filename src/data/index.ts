@@ -85,6 +85,10 @@ const lectureImports = {
     import("./lectures/java-oop-principles-lecture").then(
       (m) => m.javaOOPPrinciplesLecture
     ),
+  "data-exposure-lecture": () =>
+    import("./lectures/data-exposure-lecture").then(
+      (m) => m.dataExposureLecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

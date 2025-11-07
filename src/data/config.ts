@@ -23,5 +23,6 @@ export const dataConfig = {
     "broken-authentication-lecture",
     "oauth-jwt-lecture",
     "java-oop-principles-lecture",
+    "data-exposure-lecture",
   ],
 };

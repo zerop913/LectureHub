@@ -24,5 +24,6 @@ export const dataConfig = {
     "oauth-jwt-lecture",
     "java-oop-principles-lecture",
     "data-exposure-lecture",
+    "html-css-basics-best-practices",
   ],
 };

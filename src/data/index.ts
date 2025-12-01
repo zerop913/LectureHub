@@ -94,6 +94,10 @@ const lectureImports = {
     import("./lectures/html-css-basics-best-practices").then(
       (m) => m.htmlCssBasicsAndBestPractices
     ),
+  "java-interfaces-abstract-lecture": () =>
+    import("./lectures/java-interfaces-abstract-lecture").then(
+      (m) => m.javaInterfacesAbstractLecture
+    ),
 };
 
 export async function getAllGroups(): Promise<Group[]> {

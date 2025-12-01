@@ -25,5 +25,6 @@ export const dataConfig = {
     "java-oop-principles-lecture",
     "data-exposure-lecture",
     "html-css-basics-best-practices",
+    "java-interfaces-abstract-lecture",
   ],
 };
